@@ -1,11 +1,35 @@
-.masterdiv {
-	height: 1000px;
-	width: auto;
-	background-color: white;
+body {
+	background-color: #0099FF;
 }
 
-.menu {
-	height: 1000px;
-	width: 200px;
+.masterdiv {
+	height: auto;
+	width: auto;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+.logo {
+	top: 0px;
+	height: 30px;
+	width: auto;
 	background-color: black;
+}
+
+.links {
+	margin-top: 0px;
+	height: 30px;
+	width: auto;
+	background-color: black;
+}
+
+p, h1 {
+	color: white;
+	font-family: 'Roboto Condensed', sans-serif; /*ger texten en annan stil*/
+}
+
+.quickinfo {
+	height: 100px;
+	width: auto;
+	bottom: 0px;
 }
