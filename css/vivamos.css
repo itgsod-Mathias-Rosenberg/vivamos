@@ -1,0 +1,11 @@
+.masterdiv {
+	height: 1000px;
+	width: auto;
+	background-color: white;
+}
+
+.menu {
+	height: 1000px;
+	width: 200px;
+	background-color: black;
+}
