@@ -55,18 +55,18 @@ p, h1 {
 
 .next_left {
 	float: left;
-	background-image: url(./images/next_left.jpg);
-	background-repeat: no-repeat;
 	width: 60px;
-	margin-top: 40%;
+	height: 500px;
+	background-image: url(./images/next_left.gif);
+	background-repeat: no-repeat;
 }
 
 .next_right {
 	float: right;
-	background-image: url(./images/next_right.jpg);
-	background-repeat: no-repeat;
 	width: 60px;
-	margin-top: 40%;
+	height: 500px;
+	background-image: url(./images/next_right.gif);
+	background-repeat: no-repeat;
 }
 
 .quickinfo {
