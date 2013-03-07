@@ -34,7 +34,8 @@ body {
 }
 
 .links {
-	height: 55px;
+	padding-top: 16px;
+	height: 35px;
 	width: auto;
 	background-color: #009933;
 }
@@ -58,27 +59,40 @@ p, h1 {
 	font-family: 'Roboto Condensed', sans-serif; /*ger texten en annan font*/
 }
 
+p {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+p.content {
+	float: left;
+	overflow: visible;
+}
+
 .content {
 	height: 500px;
 	width: auto;
+	padding: 5px 0px 0px 5px;
+	overflow: hidden;
 }
 
 .next_left {
-	margin-top: 27%;
-	float: left;
+	margin-top: 30%;
 	width: 31px;
 	height: 46px;
 	background-image: url(/images/next_left.gif);
 	opacity: 0.5;
+	position: absolute;
 }
 
 .next_right {
-	margin-top: 27%;
-	float: right;
+	margin-top: 30%;
+	right: 19%;
 	width: 31px;
 	height: 46px;
 	background-image: url(/images/next_right.gif);
 	opacity: 0.5;
+	position: absolute;
 }
 
 .quickinfo {

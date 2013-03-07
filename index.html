@@ -17,34 +17,26 @@
 				</h1>
 			</div>
 			<div class="links">
-				<a href="konsumentvägledning.html" target="_self">
-					<div class="left">
-						<p>
-							Konsumentvägledning
-						</p>
-					</div>
-				</a>
-				<a href="specialresor.html" target="_self">
-					<div class="left">
-						<p>
-							Specialresor
-						</p>
-					</div>
-				</a>
-				<a href="tekniskkonsultverksamhet.html" target="_self">
-					<div class="right">
-						<p>
-							Teknisk konsultverksamhet
-						</p>
-					</div>
-				</a>
-				<a href="latindans.html" target="_self">
-					<div class="right">
-						<p>
-							Latindans
-						</p>
-					</div>
-				</a>
+				<div id="konsument" class="left" onclick="kClick(this)" onmouseover="kOver(this)" onmouseout="kOut(this)">
+					<p>
+						Konsumentvägledning
+					</p>
+				</div>
+				<div id="special" class="left" onclick="sClick(this)">
+					<p>
+						Specialresor
+					</p>
+				</div>
+				<div id="teknisk" class="right" onclick="tClick(this)">
+					<p>
+						Teknisk konsultverksamhet
+					</p>
+				</div>
+				<div id="latin" class="right" onclick="lClick(this)">
+					<p>
+						Latindans
+					</p>
+				</div>
 			</div>
 		</div>
 		<div class="content">
@@ -52,6 +44,9 @@
 			</div>
 			<div class="next_right">
 			</div>
+			<p id="text">
+
+			</p>
 		</div>
 		<div class="quickinfo">
 			<p>
@@ -61,6 +56,16 @@
 				Kontakt Torsten Carlsson   tfn: 0738 146141   e-mail: torstencarlsson@vivamos.nu
 			</p>
 		</div>
+		<script type="text/javascript">
+		function kClick(obj) {
+			var element=document.getElementById("text").innerHTML="test";
+		}
+		function kOver(obj) {
+			$('#konsument').stop().animate({
+				
+			});
+		}
+		</script>
 	</div>
 </body>
 </html>
