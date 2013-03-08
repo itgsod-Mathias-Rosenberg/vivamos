@@ -96,10 +96,9 @@ p.content {
 }
 
 .quickinfo {
-	height: 63px;
+	height: auto;
 	width: auto;
-	padding-left: 6px;
-	padding-right: 6px;
+	padding: 6px 6px 6px 6px;
 	background-color: #009933;
 	border-radius: 0px 0px 10px 10px;
 }
