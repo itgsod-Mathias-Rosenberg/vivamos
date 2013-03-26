@@ -24,20 +24,6 @@ h5 {
 }
 
 ul {
-	/*background-image: linear-gradient(bottom, rgb(27,183,194) 29%, rgb(30,91,214) 65%, rgb(9,102,240) 83%);
-	background-image: -o-linear-gradient(bottom, rgb(27,183,194) 29%, rgb(30,91,214) 65%, rgb(9,102,240) 83%);
-	background-image: -moz-linear-gradient(bottom, rgb(27,183,194) 29%, rgb(30,91,214) 65%, rgb(9,102,240) 83%);
-	background-image: -webkit-linear-gradient(bottom, rgb(27,183,194) 29%, rgb(30,91,214) 65%, rgb(9,102,240) 83%);
-	background-image: -ms-linear-gradient(bottom, rgb(27,183,194) 29%, rgb(30,91,214) 65%, rgb(9,102,240) 83%);
-
-	background-image: -webkit-gradient(
-		linear,
-		left bottom,
-		left top,
-		color-stop(0.29, rgb(27,183,194)),
-		color-stop(0.65, rgb(30,91,214)),
-		color-stop(0.83, rgb(9,102,240))
-	);*/
 	position: absolute;
 	/*background-image: url(/images/background.jpg);*/
 	list-style-type: none;
@@ -51,11 +37,8 @@ li {
 }
 
 ul a {
-	background-image: url(/images/seperator.jpg);
-	background-repeat: no-repeat;
-	background-position: right;
-	padding-right: 32px;
-	padding-left: 32px;
+	padding-right: 22px;
+	padding-left: 22px;
 	display: block;
 	line-height: 80px;
 	text-decoration: none;
@@ -83,20 +66,17 @@ ul.menu li:hover > ul {
 }
 
 ul.drop_down {
-	background-image: url(/images/background180.jpg);
 	border-radius: 0px 0px 10px 10px;
+	background-color: white;
 }
 
 ul.drop_down a {
-	background-image: url(/images/seperator180.jpg);
-}
-
-ul.drop_down.sub {
-	background-image: url(/images/background.jpg);
-	border-radius: 10px 10px 10px 10px;
+	border-radius: 0px;
 }
 
 li.menu a:hover{
 	background-color: white;
 	color: #0966f0;
+
+	/*border-radius: 10px 10px 10px 10px;*/
 }

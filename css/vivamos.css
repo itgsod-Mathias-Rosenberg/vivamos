@@ -1,7 +1,5 @@
 body {
-	background-image: url(/images/wallpaper1.jpg);
-	background-repeat: no-repeat;
-	position: fixed;
+	background-image: url(/images/background1.jpg);
 }
 
 .header {
@@ -70,6 +68,21 @@ body {
 	height: auto;
 	width: 98.7%;
 	padding: 6px 6px 6px 6px;
-	background-image: url(/images/background180.jpg);
+	background-image: linear-gradient(bottom, rgb(27,183,194) 29%, rgb(30,91,214) 65%, rgb(9,102,240) 83%);
+	background-image: -o-linear-gradient(bottom, rgb(27,183,194) 29%, rgb(30,91,214) 65%, rgb(9,102,240) 83%);
+	background-image: -moz-linear-gradient(bottom, rgb(27,183,194) 29%, rgb(30,91,214) 65%, rgb(9,102,240) 83%);
+	background-image: -webkit-linear-gradient(bottom, rgb(27,183,194) 29%, rgb(30,91,214) 65%, rgb(9,102,240) 83%);
+	background-image: -ms-linear-gradient(bottom, rgb(27,183,194) 29%, rgb(30,91,214) 65%, rgb(9,102,240) 83%);
+
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.71, rgb(27,183,194)),
+		color-stop(0.35, rgb(30,91,214)),
+		color-stop(0.17, rgb(9,102,240))
+	);
+	
+	float: left;
 	border-radius: 0px 0px 10px 10px;
 }
