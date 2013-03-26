@@ -1,0 +1,102 @@
+a {
+	text-decoration: none;
+	color: white;
+}
+
+p, h1, h2 {
+	color: white;
+	font-family: 'Roboto Condensed', sans-serif; /*ger texten en annan font*/
+}
+
+p {
+	/*font-size: 20px;*/
+}
+
+.quickinfo p {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+h5 {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-family: 'Roboto Condensed', sans-serif; /*ger texten en annan font*/
+}
+
+ul {
+	/*background-image: linear-gradient(bottom, rgb(27,183,194) 29%, rgb(30,91,214) 65%, rgb(9,102,240) 83%);
+	background-image: -o-linear-gradient(bottom, rgb(27,183,194) 29%, rgb(30,91,214) 65%, rgb(9,102,240) 83%);
+	background-image: -moz-linear-gradient(bottom, rgb(27,183,194) 29%, rgb(30,91,214) 65%, rgb(9,102,240) 83%);
+	background-image: -webkit-linear-gradient(bottom, rgb(27,183,194) 29%, rgb(30,91,214) 65%, rgb(9,102,240) 83%);
+	background-image: -ms-linear-gradient(bottom, rgb(27,183,194) 29%, rgb(30,91,214) 65%, rgb(9,102,240) 83%);
+
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.29, rgb(27,183,194)),
+		color-stop(0.65, rgb(30,91,214)),
+		color-stop(0.83, rgb(9,102,240))
+	);*/
+	position: absolute;
+	/*background-image: url(/images/background.jpg);*/
+	list-style-type: none;
+	height: 80px;
+	border-radius: 10px 10px 0px 0px;
+}
+
+li {
+	float: left;
+	margin: 0;
+}
+
+ul a {
+	background-image: url(/images/seperator.jpg);
+	background-repeat: no-repeat;
+	background-position: right;
+	padding-right: 32px;
+	padding-left: 32px;
+	display: block;
+	line-height: 80px;
+	text-decoration: none;
+	font-size: 21px;
+	color: #371C1C;
+}
+
+ul a:hover {
+	color: white;
+}
+
+ul.menu, ul.menu ul {
+	list-style:none;
+	margin:0; padding:0;
+	position: relative;
+}
+
+ul.menu ul {						
+    display:none; /*initially menu item is hidden*/
+    position: absolute; /*absolute positioning is important for menu to float*/
+}
+
+ul.menu li:hover > ul {
+	display:block;
+}
+
+ul.drop_down {
+	background-image: url(/images/background180.jpg);
+	border-radius: 0px 0px 10px 10px;
+}
+
+ul.drop_down a {
+	background-image: url(/images/seperator180.jpg);
+}
+
+ul.drop_down.sub {
+	background-image: url(/images/background.jpg);
+	border-radius: 10px 10px 10px 10px;
+}
+
+li.menu a:hover{
+	background-color: white;
+	color: #0966f0;
+}

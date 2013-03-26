@@ -6,65 +6,254 @@
 		Vivamos
 	</title>
 	<link rel="stylesheet" type="text/css" href="/css/vivamos.css">
-	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'> <!--behövs för att fixa text stilen-->
+	<link rel="stylesheet" type="text/css" href="/css/vivamostext.css">
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'> <!--behövs för att fixa textstilen-->
 </head>
 <body>
 	<div class="masterdiv">
-		<div class="header">
-			<div class="logo">
-				<h1>
+		<div class="logo">
+			<h1>
+				<a onclick="start()" href="#">
 					Vivamos
-				</h1>
-			</div>
-			<div class="links">
-				<div id="konsument" class="left" onclick="kClick(this)" onmouseover="kOver(this)" onmouseout="kOut(this)">
-					<p>
-						Konsumentvägledning
-					</p>
-				</div>
-				<div id="special" class="left" onclick="sClick(this)">
-					<p>
-						Specialresor
-					</p>
-				</div>
-				<div id="teknisk" class="right" onclick="tClick(this)">
-					<p>
-						Teknisk konsultverksamhet
-					</p>
-				</div>
-				<div id="latin" class="right" onclick="lClick(this)">
-					<p>
-						Latindans
-					</p>
-				</div>
-			</div>
+				</a>
+			</h1>
 		</div>
-		<div class="content">
-			<div class="next_left">
-			</div>
-			<div class="next_right">
-			</div>
-			<p id="text">
-				
+		<div class="header">
+			<nav>
+				<ul class="menu">
+					<li>
+						<a onclick="Konsumentvägledning()" href="#konsumentvägledning">
+							<h5>
+								Konsumentvägledning
+							</h5>
+						</a>
+					</li>
+					<li class="menu">
+						<a onclick="specialresor()" href="#Specialresor">
+							<h5>
+								Specialresor
+							</h5>
+						</a>
+						<ul class="drop_down">
+							<li>
+								<a onclick="ubatuba()" href="#Ubatuba" style="background-image: none;">
+									<h5>
+										Ubatuba, Brasilien
+									</h5>
+								</a>
+								<ul class="drop_down sub">
+									<li>
+										<a onclick="anmälan-augusti-2013()" href="#anmälan-augusti-2013" style="background-image: none;">
+											<h5>
+												Anmälan augusti
+											</h5>
+										</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a onclick="Konsumentvägledning()" href="#Teknisk konsultverksamhet">
+							<h5>
+								Teknisk konsultverksamhet
+							</h5>
+						</a>
+					</li>
+					<li>
+						<a onclick="latindans()" href="#Latindans">
+							<h5>
+								Latindans
+							</h5>
+						</a>
+					</li>
+					<li>
+						<a onclick="kontakt()" href="#Kontakt" style="background-image: none;">
+							<h5>
+								Kontakt
+							</h5>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<div id="content">
+			<h2>
+				vivamos.nu erbjuder följande tjänster och aktiviteter:
+			</h2>
+			<p>
+				Specialresor
 			</p>
-		</div>
+			<p>
+				Latindans
+			</p>
+			<p>
+				Konsumentrådgivning
+			</p>
+    </div>
 		<div class="quickinfo">
 			<p>
 				vivamos.nu    Org nr 520720-3331   Godkänd för F-skatt   Innehar statlig resegaranti ställd hos Kammarkollegiet
 			</p>
 			<p>
-				Kontakt Torsten Carlsson   tfn: 0738 146141   e-mail: torstencarlsson@vivamos.nu
+				Kontakt Torsten Carlsson   tfn: 0738 146141   e-mail: <a href="mailto:torstencarlsson@vivamos.nu">torstencarlsson@vivamos.nu</a>
 			</p>
 		</div>
-		<script type="text/javascript">
-		function kClick(obj) {
-			var element=document.getElementById("text").innerHTML="";
-		}
-		function kOver(obj) {
-			$('#konsument').stop().animate({
-				height:'80px'
-			});
-		}
+		<script>
+			function start()
+			{
+			var xmlhttp;
+			if (window.XMLHttpRequest)
+			  {// code for IE7+, Firefox, Chrome, Opera, Safari
+			  xmlhttp=new XMLHttpRequest();
+			  }
+			else
+			  {// code for IE6, IE5
+			  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+			  }
+			xmlhttp.onreadystatechange=function()
+			  {
+			  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+			    {
+			    document.getElementById("content").innerHTML=xmlhttp.responseText;
+			    }
+			  }
+			xmlhttp.open("GET","start.txt",true);
+			xmlhttp.send();
+			}
+
+			function Konsumentvägledning()
+			{
+			var xmlhttp;
+			if (window.XMLHttpRequest)
+			  {// code for IE7+, Firefox, Chrome, Opera, Safari
+			  xmlhttp=new XMLHttpRequest();
+			  }
+			else
+			  {// code for IE6, IE5
+			  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+			  }
+			xmlhttp.onreadystatechange=function()
+			  {
+			  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+			    {
+			    document.getElementById("content").innerHTML=xmlhttp.responseText;
+			    }
+			  }
+			xmlhttp.open("GET","konsumentvägledning.txt",true);
+			xmlhttp.send();
+			}
+
+			function kontakt()
+			{
+			var xmlhttp;
+			if (window.XMLHttpRequest)
+			  {// code for IE7+, Firefox, Chrome, Opera, Safari
+			  xmlhttp=new XMLHttpRequest();
+			  }
+			else
+			  {// code for IE6, IE5
+			  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+			  }
+			xmlhttp.onreadystatechange=function()
+			  {
+			  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+			    {
+			    document.getElementById("content").innerHTML=xmlhttp.responseText;
+			    }
+			  }
+			xmlhttp.open("GET","kontakt.txt",true);
+			xmlhttp.send();
+			}
+
+			function specialresor()
+			{
+			var xmlhttp;
+			if (window.XMLHttpRequest)
+			  {// code for IE7+, Firefox, Chrome, Opera, Safari
+			  xmlhttp=new XMLHttpRequest();
+			  }
+			else
+			  {// code for IE6, IE5
+			  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+			  }
+			xmlhttp.onreadystatechange=function()
+			  {
+			  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+			    {
+			    document.getElementById("content").innerHTML=xmlhttp.responseText;
+			    }
+			  }
+			xmlhttp.open("GET","specialresor.txt",true);
+			xmlhttp.send();
+			}
+
+			function ubatuba()
+			{
+			var xmlhttp;
+			if (window.XMLHttpRequest)
+			  {// code for IE7+, Firefox, Chrome, Opera, Safari
+			  xmlhttp=new XMLHttpRequest();
+			  }
+			else
+			  {// code for IE6, IE5
+			  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+			  }
+			xmlhttp.onreadystatechange=function()
+			  {
+			  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+			    {
+			    document.getElementById("content").innerHTML=xmlhttp.responseText;
+			    }
+			  }
+			xmlhttp.open("GET","specialresa-ubatuba.txt",true);
+			xmlhttp.send();
+			}
+
+			function anmälanaugusti2013()
+			{
+			var xmlhttp;
+			if (window.XMLHttpRequest)
+			  {// code for IE7+, Firefox, Chrome, Opera, Safari
+			  xmlhttp=new XMLHttpRequest();
+			  }
+			else
+			  {// code for IE6, IE5
+			  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+			  }
+			xmlhttp.onreadystatechange=function()
+			  {
+			  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+			    {
+			    document.getElementById("content").innerHTML=xmlhttp.responseText;
+			    }
+			  }
+			xmlhttp.open("GET","anmälan-augusti-2013.txt",true);
+			xmlhttp.send();
+			}
+
+			function latindans()
+			{
+			var xmlhttp;
+			if (window.XMLHttpRequest)
+			  {// code for IE7+, Firefox, Chrome, Opera, Safari
+			  xmlhttp=new XMLHttpRequest();
+			  }
+			else
+			  {// code for IE6, IE5
+			  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+			  }
+			xmlhttp.onreadystatechange=function()
+			  {
+			  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+			    {
+			    document.getElementById("content").innerHTML=xmlhttp.responseText;
+			    }
+			  }
+			xmlhttp.open("GET","latindans.txt",true);
+			xmlhttp.send();
+			}
+			
 		</script>
 	</div>
 </body>

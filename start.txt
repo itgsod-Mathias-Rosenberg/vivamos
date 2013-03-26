@@ -1,1 +1,15 @@
-Hej hå
+<h2>
+	vivamos.nu erbjuder följande tjänster och aktiviteter:
+</h2>
+<p>
+	Specialresor
+</p>
+<p>
+	Latindans
+</p>
+<p>
+	Konsumentrådgivning
+</p>
+<p>
+	Teknisk konsulttjänst
+<p>
