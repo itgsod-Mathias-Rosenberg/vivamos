@@ -3,13 +3,9 @@ a {
 	color: white;
 }
 
-p, h1, h2 {
+p, h1, h2, h4 {
 	color: white;
 	font-family: 'Roboto Condensed', sans-serif; /*ger texten en annan font*/
-}
-
-p {
-	/*font-size: 20px;*/
 }
 
 .quickinfo p {
@@ -24,14 +20,11 @@ h5 {
 }
 
 ul {
-	position: absolute;
-	/*background-image: url(/images/background.jpg);*/
+	/*position: absolute;*/
 	list-style-type: none;
-	height: 80px;
-	border-radius: 10px 10px 0px 0px;
 }
 
-li {
+ul.menu li {
 	float: left;
 	margin: 0;
 }
@@ -57,8 +50,8 @@ ul.menu, ul.menu ul {
 }
 
 ul.menu ul {						
-    display:none; /*initially menu item is hidden*/
-    position: absolute; /*absolute positioning is important for menu to float*/
+    display:none;
+    position: absolute;
 }
 
 ul.menu li:hover > ul {
@@ -66,7 +59,6 @@ ul.menu li:hover > ul {
 }
 
 ul.drop_down {
-	border-radius: 0px 0px 10px 10px;
 	background-color: white;
 }
 
@@ -77,6 +69,8 @@ ul.drop_down a {
 li.menu a:hover{
 	background-color: white;
 	color: #0966f0;
+}
 
-	/*border-radius: 10px 10px 10px 10px;*/
+ul.sub {
+	border-radius: 0px 0px 10px 0px;
 }

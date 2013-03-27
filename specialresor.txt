@@ -1,4 +1,4 @@
-<a onclick="anmälanaugusti2013()" href="#anmälan-augusti-2013">
+<a onclick="ubatuba()" href="#ubatuba">
 	<div class="next_right">
 	</div>
 </a>

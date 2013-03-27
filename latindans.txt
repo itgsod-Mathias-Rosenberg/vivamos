@@ -1,6 +1,6 @@
-<h4>
+<h2>
 	Om vivamos.nu/latindans
-</h4>
+</h2>
 <p>
 	vivamos.nu erbjuder träning i latindans. Dansen och musiken har vi hämtat främst från Cuba och Salvador da Bahia i Brasilien.
 </p>

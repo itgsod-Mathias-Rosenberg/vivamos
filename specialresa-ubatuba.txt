@@ -1,3 +1,11 @@
+<a onclick="specialresor()" href="#specialresor">
+	<div class="next_left">
+	</div>
+</a>
+<a onclick="anmalanaugusti2013()" href="#augusti-2013">
+	<div class="next_right">
+	</div>
+</a>
 <h2>
 	Skräddarsydd upplevelse i Ubatuba
 </h2>

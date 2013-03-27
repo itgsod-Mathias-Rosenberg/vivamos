@@ -1,23 +1,19 @@
-<a onclick="ubatuba()" href="#ubatuba">
+<a onclick="anmalanaugusti2013()" href="#augusti-2013">
 	<div class="next_left">
 	</div>
 </a>
-<a onclick="anmalanoktober2013()" href="#oktober-2013">
-	<div class="next_right">
-	</div>
-</a>
 <h2>
-	Reseinfo och anmälan Ubatuba augusti 2013
+	Reseinfo och anmälan Ubatuba oktober 2013
 </h2>
 <ul class="normal">
 	<li>
 		<p>
-			Avresa från Köpenhamn 5 augusti
+			Avresa från Köpenhamn 1-5 oktober*
 		</p>
 	</li>
 	<li>
 		<p>
-			Hemresa från Sao Paolo 16 augusti
+			Hemresa från Sao Paolo alt Rio de Janeiro 12-16 oktober*
 		</p>
 	</li>
 	<li>
@@ -32,7 +28,7 @@
 	</li>
 	<li>
 		<p>
-			5 st utflykter och aktiviteter*
+			5 st utflykter och aktiviteter**
 		</p>
 	</li>
 	<li>
@@ -42,7 +38,7 @@
 	</li>
 	<li>
 		<p>
-			Slutbetalning utöver anmälningsavgift: 12 000 kr (Totalt pris: 22 000 kr)**
+			Slutbetalning utöver anmälningsavgift: 12 000 kr (Totalt pris: 22 000 kr)***
 		</p>
 	</li>
 	<li>
@@ -57,16 +53,16 @@
 	</li>
 	<li>
 		<p>
-			*Det slutliga programmet för utflykter och aktiviteter skräddarsys för respektive deltagare efter ankomst
+			**Det slutliga programmet för utflykter och aktiviteter skräddarsys för respektive deltagare efter ankomst
 		</p>
 		<p>
-			**Gäller del i dubbelrum
+			***Gäller del i dubbelrum
 		</p>
 	</li>
 </ul>
-<h4>
-	Anmälan görs på mejl till <a href="mailto:torstencarlsson@vivamos.nu">torstencarlsson@vivamos.nu.</a> Ange:
-</h4>
+<h2>
+	Anmälan görs på mejl till torstencarlsson@vivamos.nu. Ange:
+</h2>
 <ul>
 	<li>
 		<p>
@@ -92,9 +88,9 @@
 		</p>
 	</li>
 </ul>
-<h4>
+<h2>
 	Anmälningsavgift och slutbetalning insätts på Bg 5636-5380. Ange:
-</h4>
+</h2>
 <ul>
 	<li>
 		<p>
@@ -112,18 +108,15 @@
 		</p>
 	</li>
 </ul>
-<h4>
+<h2>
 	Övrig information:
-</h4>
+</h2>
 <ul>
 	<li>
 		<p>
 			För information gällande bestämmelser om pass, visum, vaccinationer samt övrig reseinformation om Brasilien hänvisas till 
-		<a href="http://www.swedenabroad.com/sv-SE/Ambassader/Brasilia/Reseinformation-sys/Reseinformation-Brasilien-sys/">
-			<p>
-				Reseinformation från Sveriges ambassad i Brasilien
-			</p>
-		</a>
+			Reseinformation från Sveriges ambassad i Brasilien
+		</p>
 	</li>
 	<li>
 		<p>

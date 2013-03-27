@@ -36,16 +36,23 @@
 						</a>
 						<ul class="drop_down">
 							<li>
-								<a onclick="ubatuba()" href="#Ubatuba" style="background-image: none;">
+								<a onclick="ubatuba()" href="#Ubatuba">
 									<h5>
 										Ubatuba, Brasilien
 									</h5>
 								</a>
 								<ul class="drop_down sub">
 									<li>
-										<a onclick="anmälan-augusti-2013()" href="#anmälan-augusti-2013" style="background-image: none;">
-											<h5>
+										<a onclick="anmalanaugusti2013()" href="#anmälan-augusti-2013">
+											<h5 class="sub_menu">
 												Anmälan augusti
+											</h5>
+										</a>
+									</li>
+									<li>
+										<a onclick="anmalanoktober2013()" href="#anmälan-oktber-2013">
+											<h5 class="sub_menu">
+												Anmälan oktober
 											</h5>
 										</a>
 									</li>
@@ -68,7 +75,7 @@
 						</a>
 					</li>
 					<li>
-						<a onclick="kontakt()" href="#Kontakt" style="background-image: none;">
+						<a onclick="kontakt()" href="#Kontakt">
 							<h5>
 								Kontakt
 							</h5>
@@ -210,7 +217,7 @@
 			xmlhttp.send();
 			}
 
-			function anmälanaugusti2013()
+			function anmalanaugusti2013()
 			{
 			var xmlhttp;
 			if (window.XMLHttpRequest)
@@ -229,6 +236,28 @@
 			    }
 			  }
 			xmlhttp.open("GET","anmälan-augusti-2013.txt",true);
+			xmlhttp.send();
+			}
+
+			function anmalanoktober2013()
+			{
+			var xmlhttp;
+			if (window.XMLHttpRequest)
+			  {// code for IE7+, Firefox, Chrome, Opera, Safari
+			  xmlhttp=new XMLHttpRequest();
+			  }
+			else
+			  {// code for IE6, IE5
+			  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+			  }
+			xmlhttp.onreadystatechange=function()
+			  {
+			  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+			    {
+			    document.getElementById("content").innerHTML=xmlhttp.responseText;
+			    }
+			  }
+			xmlhttp.open("GET","anmälan-oktober-2013.txt",true);
 			xmlhttp.send();
 			}
 
